@@ -6,10 +6,10 @@ def add_medicine():
     messagebox.showinfo("Add Medicine", "This feature will allow you to add a new medicine reminder.")
 
 def view_schedule():
-    messagebox.showinfo("View Schedule", "This feature will display the medication schedule.")
+    messagebox.showinfo("View Schedule", "This feature will display your medication schedule.")
 
 def open_settings():
-    messagebox.showinfo("Settings", "This feature will allow users to configure preferences.")
+    messagebox.showinfo("Settings", "This feature will allow you to configure preferences.")
 
 def show_about():
     messagebox.showinfo("About", "Intelligent Medicine Reminder System\nVersion 1.0\nDeveloped by Drug Testers Team")
@@ -32,7 +32,7 @@ file_menu.add_command(label="Add Medicine", command=add_medicine)
 file_menu.add_command(label="View Schedule", command=view_schedule)
 file_menu.add_separator()
 file_menu.add_command(label="Exit", command=exit_app)
-menu_bar.add_cascade(label="File", menu=file_menu)
+menu_bar.add_cascade(label="File", menu=file_menu) // I implemented this to add a submenu for our menu
 
 root.config(menu=menu_bar)
 root.mainloop() // Dela Cruz
